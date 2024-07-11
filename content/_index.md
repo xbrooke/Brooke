@@ -1,41 +1,48 @@
-=---
-title: '首页'  # 页面标题
-date: 2023-10-24  # 页面最后更新日期
-type: landing  # 页面类型（这里是一个落地页）
+---
+title: 'Home'
+date: 2023-10-24
+type: landing
 
 design:
-  spacing: "4rem"  # 默认的区块间距
+  # Default section spacing
+  spacing: "4rem"
 
-# 注意：`username`指的是`content/authors/`目录下作者的文件夹名
+# Note: `username` refers to the user's folder name in `content/authors/`
 
-# 页面各个部分
+# Page sections
 sections:
-  - block: biography  # 个人简介部分
+  - block: biography
     content:
-      username: 徐斌  # 作者用户名
-      button:  # 可选的个人简介下的行动按钮
-        text: 下载简历  # 按钮文本
-        url: uploads/resume.pdf  # 简历文件的URL
+      username: admin
+      # Show a call-to-action button under your biography? (optional)
+      button:
+        text: Download Résumé
+        url: uploads/resume.pdf
     design:
       banner:
-        filename: kalen-emsley-Bkci_8qcdvQ-unsplash.jpg  # 个人简介的横幅图片文件名
+        # Upload your cover image to the `assets/media/` folder and reference it here
+        filename: kalen-emsley-Bkci_8qcdvQ-unsplash.jpg
       biography:
-        style: 'text-align: justify; font-size: 0.8em;'  # 个人简介文本的样式
-
-  - block: experience  # 经验部分
+        # Customize the style of your biography text
+        style: 'text-align: justify; font-size: 0.8em;'
+  - block: experience
     content:
-      username: 徐斌  # 作者用户名
+      username: admin
     design:
-      date_format: 'January 2006'  # 经验条目中日期的格式
-      is_education_first: false  # 是否先显示教育经历还是工作经历（这里先显示工作经历）
-
-  - block: skills  # 技能部分
+      # Hugo date format
+      date_format: 'January 2006'
+      # Education or Experience section first?
+      is_education_first: false
+  - block: skills
     content:
-      title: 技能与爱好  # 标题
-      username: 徐斌  # 作者用户名
-
-  - block: languages  # 语言能力部分
+      title: Skills & Hobbies
+      username: admin
+  - block: awards
     content:
-      title: 语言能力  # 标题
-      username: 徐斌  # 作者用户名
+      title: Awards
+      username: admin
+  - block: languages
+    content:
+      title: Languages
+      username: admin
 ---
